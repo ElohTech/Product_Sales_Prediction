@@ -51,15 +51,23 @@ Here are examples of some of the data visualizations
 Our models include a linear regression model, and default and tuned random forest models using GridSearchCV.
 
 - Because our target is a number (item sales), we will use regression metrics to evaluate the performance of each model.
-- Important metrics for regression models include  Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R2 (R^2)
-- - The R2 score tells us what percentage of the variation in the target the model can explain. We will use this for our primary metric. 
-- Of the three models, we will see that the tuned random forest model did the best on the test dataset because it has the highest R2 score. 
+- Important metrics for regression models include  Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R2 (R^2).
+- The R2 score tells us what percentage of the variation in the target the model can explain. We will use this for our primary metric.
+- The RMSE tells us how far on average we can expect our real value is from our predicted value. It gives the units in the same unit (in $) as our target.
+
+  
+## Model Evaluation
+ Our models have the following results:
+- The Linear Regression Model is able to correctly predict the sales on an average of $1,093 off from the true value based on its RMSE. 
+- The Default Random Forest Model is able to correctly predict the sales on an average of $1,104 from of the true value based on its RMSE. 
+- The Tuned Random Forest Model is able to correctly predict the sales on an average of $1,047 off from the true value based on its RMSE.
+- Of the three models, we will also see that the Tuned Random Forest Model did the best on the test dataset because it has the highest R2 score.
 
 ## Recommendations:
-We recommend the use of the tuned random forest model. 
+We recommend the use of the Tuned Random Forest Model. 
 
 ## Limitations & Next Steps
 To achieve a higher metric, the model can include more hyperparameters and their options in its tuning. 
 
 ### For further information
-For any additional questions, please contact Phuong Huynh
+For any additional questions, please contact Phuong Huynh.
